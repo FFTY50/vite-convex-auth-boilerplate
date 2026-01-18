@@ -1,0 +1,18 @@
+---
+globs: 'src/App.tsx`, `src/main.tsx`, and `src/pages/**`
+alwaysApply: false
+---
+Generate the complete contents of `.cursor/rules/routing-layout.mdc`.
+
+Scope: Applies to `src/App.tsx`, `src/main.tsx`, and `src/pages/**`.
+
+Rules must enforce:
+- Standard SPA routing using react-router-dom.
+- Clear separation of public vs protected routes.
+- Auth redirects that preserve return destination.
+- A catch-all 404 route.
+- Readable, non-over-abstracted route definitions.
+
+Do not include app-specific routes.
+
+Output only the markdown content of the rule file.

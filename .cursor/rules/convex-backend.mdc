@@ -1,0 +1,21 @@
+---
+globs: convex/**
+alwaysApply: false
+---
+Generate the complete contents of `.cursor/rules/convex-backend.mdc`.
+
+Scope: Applies only to `convex/**`.
+
+Rules must enforce:
+- Schema-first development (schema.ts before queries/mutations).
+- Strict separation of queries, mutations, and actions.
+- Argument validation using Convex `v`.
+- Predictable naming and file organization.
+- Index usage for common access patterns.
+- Minimal, typed return payloads.
+- Exclusive use of generated `api` and `_generated/server`.
+
+Include:
+- A short checklist the agent must satisfy before completing any backend task.
+
+Output only the markdown content of the rule file.

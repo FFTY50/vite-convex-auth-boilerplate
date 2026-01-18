@@ -1,0 +1,15 @@
+---
+alwaysApply: false
+---
+Generate the complete contents of `.cursor/rules/ui-minimalism.mdc`.
+
+Scope: Apply Intelligently.
+
+Rules must enforce:
+- Minimal, non-opinionated UI scaffolding only.
+- No custom themes, dashboards, animations, or visual polish unless explicitly requested.
+- Use shadcn/ui primitives and basic Tailwind utilities only.
+- Basic accessibility requirements (labels, aria attributes, focus states).
+- Deferral of all design systems and visual decisions.
+
+Output only the markdown content of the rule file.

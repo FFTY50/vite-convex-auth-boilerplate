@@ -1,0 +1,32 @@
+---
+alwaysApply: true
+---
+
+# Vibe Stack Master Rules (Always)
+
+You are building a Vite + React + TypeScript Single Page App (SPA) powered by Convex.
+
+Non-negotiables
+- SPA only (Vite). No Next.js, no SSR, no server actions.
+- Backend/data/auth: Convex + Convex Auth (@convex-dev/auth).
+- Routing: react-router-dom.
+- Styling: Tailwind + shadcn/ui, but keep UI minimal/vanilla (no heavy design decisions yet).
+
+Structure
+- Keep structure flat and predictable:
+  - /convex (schema + functions)
+  - /src/pages (route-level pages)
+  - /src/components (reusable UI)
+  - /src/lib (utils)
+  - /src/hooks (custom hooks when needed)
+
+Coding rules
+- Convex-first: check `convex/schema.ts` and existing convex functions before building UI assumptions.
+- Data access ONLY via generated `api` + `useQuery` / `useMutation`.
+- Prefer hooks over prop drilling unless there is a clear reason to lift state.
+- Avoid deep nesting and premature abstraction.
+
+Output format
+- List exact files changed/added.
+- Ensure code compiles and `npm run dev` runs.
+- Don’t add “nice-to-have” features unless explicitly requested.

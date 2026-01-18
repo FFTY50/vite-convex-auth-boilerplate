@@ -1,0 +1,17 @@
+---
+alwaysApply: false
+---
+Generate the complete contents of `.cursor/rules/env-config.mdc`.
+
+Scope: Applies to `.env*`, `vite.config.ts`, and `src/lib/**`.
+
+Rules must enforce:
+- All service URLs come from environment variables.
+- Use `VITE_CONVEX_URL` for Convex client configuration.
+- Presence of `src/lib/env.ts` for env validation and typed exports.
+- A minimal `.env.example`.
+- No hardcoded secrets or URLs.
+
+Include a short checklist for env-related tasks.
+
+Output only the markdown content of the rule file.

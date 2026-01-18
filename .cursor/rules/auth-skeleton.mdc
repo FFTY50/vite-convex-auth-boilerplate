@@ -1,0 +1,34 @@
+---
+alwaysApply: false
+---
+
+# Mission: Auth Skeleton (Reusable)
+
+Goal: Scaffold authentication and routing in a Vite + React + TS SPA using Convex Auth.
+
+Auth requirements
+- Use Convex Auth per docs.
+- App is wrapped with ConvexAuthProvider in `src/main.tsx`.
+- Provide `ProtectedRoute` (or ProtectedLayout) that:
+  - redirects unauthenticated users to `/login`
+  - preserves the intended destination (return-to behavior)
+
+Routes/pages (general)
+- Public:
+  - `/login`
+  - `/sign-up` (only if password/email auth is enabled)
+  - `/forgot-password` (only if password reset is supported)
+- Protected:
+  - `/app` (or `/dashboard`) as the default protected landing page
+
+Login UX requirements (password flows)
+- Password field includes show/hide toggle.
+- Basic validation messaging (empty email/password).
+- Accessible labels + aria attributes.
+
+Implementation notes
+- Keep styling minimal/vanilla (Tailwind + shadcn primitives ok).
+- No app-specific routes in this rule; those go in per-project mission prompts.
+
+Output
+- List files changed/added and ensure `npm run dev` runs.
